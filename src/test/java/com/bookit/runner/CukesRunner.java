@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/bookit/steps",
-        dryRun = true , // it allows us to run the feature files to get the snippets
-        tags = ""
+        dryRun = false , // it allows us to run the feature files to get the snippets
+        tags = "@ui"
 )
 public class CukesRunner {
 
