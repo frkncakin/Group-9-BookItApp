@@ -3,32 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 5,
-        "name": "Login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 19553000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on the login page",
-            "match": {
-              "location": "com.bookit.steps.LogInStepDefs.i_am_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-01-25T16:17:51.333Z",
+        "start_timestamp": "2022-01-26T15:48:23.091Z",
         "before": [
           {
             "result": {
-              "duration": 8000000,
+              "duration": 5243000000,
               "status": "passed"
             },
             "match": {
@@ -36,14 +15,14 @@
             }
           }
         ],
-        "line": 8,
+        "line": 7,
         "name": "Verify that User can login.",
         "description": "",
         "id": "user-should-be-able-to-login-with-valid-credentials.;verify-that-user-can-login.",
         "after": [
           {
             "result": {
-              "duration": 291000000,
+              "duration": 899000000,
               "status": "passed"
             },
             "match": {
@@ -56,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1611000000,
+              "duration": 395000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "I enter username \"bstouther8k@meetup.com\" and password \"byranncrowdson\" and click on sign in button",
             "match": {
               "arguments": [
@@ -78,10 +57,10 @@
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 9000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "title should be displayed",
             "match": {
               "location": "com.bookit.steps.LogInStepDefs.title_should_be_displayed()"
@@ -91,37 +70,16 @@
         ],
         "tags": [
           {
-            "name": "@ui"
+            "name": "@wip"
           }
         ]
       },
       {
-        "line": 5,
-        "name": "Login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 21709000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I am on the login page",
-            "match": {
-              "location": "com.bookit.steps.LogInStepDefs.i_am_on_the_login_page()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-01-25T16:18:13.033Z",
+        "start_timestamp": "2022-01-26T15:48:29.765Z",
         "before": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 5265000000,
               "status": "passed"
             },
             "match": {
@@ -129,14 +87,14 @@
             }
           }
         ],
-        "line": 15,
+        "line": 14,
         "name": "Verify that User can not login with invalid credentials.",
         "description": "",
         "id": "user-should-be-able-to-login-with-valid-credentials.;verify-that-user-can-not-login-with-invalid-credentials.",
         "after": [
           {
             "result": {
-              "duration": 216000000,
+              "duration": 938000000,
               "status": "passed"
             },
             "match": {
@@ -149,20 +107,20 @@
         "steps": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 400000000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "I enter invalid username \" \" and password \" \" and click on sign in button",
+            "line": 16,
+            "name": "I enter invalid username \"wrong\" and password \"wrong\" and click on sign in button",
             "match": {
               "arguments": [
                 {
-                  "val": "\" \"",
+                  "val": "\"wrong\"",
                   "offset": 25
                 },
                 {
-                  "val": "\" \"",
-                  "offset": 42
+                  "val": "\"wrong\"",
+                  "offset": 46
                 }
               ],
               "location": "com.bookit.steps.LogInStepDefs.i_enter_invalid_username_and_password(java.lang.String,java.lang.String)"
@@ -171,10 +129,9 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
-            "line": 18,
+            "line": 17,
             "name": "the system should show the error message as \"[ObjectProgresEvent]\"",
             "match": {
               "arguments": [
@@ -190,7 +147,7 @@
         ],
         "tags": [
           {
-            "name": "@ui"
+            "name": "@wip"
           }
         ]
       }
@@ -202,7 +159,7 @@
     "uri": "file:src/test/resources/features/login.feature",
     "tags": [
       {
-        "name": "@ui",
+        "name": "@wip",
         "type": "Tag",
         "location": {
           "line": 1,

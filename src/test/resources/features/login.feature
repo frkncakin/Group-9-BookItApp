@@ -1,9 +1,8 @@
-@ui
+@wip
 Feature: User should be able to login with valid credentials.
 
 
-  Background: Login page
-    Given I am on the login page
+
 
   Scenario: Verify that User can login.
 
@@ -14,5 +13,5 @@ Feature: User should be able to login with valid credentials.
 
   Scenario: Verify that User can not login with invalid credentials.
 
-    When I enter invalid username " " and password " " and click on sign in button
+    When I enter invalid username "wrong" and password "wrong" and click on sign in button
     Then the system should show the error message as "[ObjectProgresEvent]"
