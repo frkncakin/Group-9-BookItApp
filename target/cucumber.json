@@ -1,0 +1,171 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-26T15:48:23.091Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5243000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bookit.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Verify that User can login.",
+        "description": "",
+        "id": "user-should-be-able-to-login-with-valid-credentials.;verify-that-user-can-login.",
+        "after": [
+          {
+            "result": {
+              "duration": 899000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bookit.steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 395000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter username \"bstouther8k@meetup.com\" and password \"byranncrowdson\" and click on sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bstouther8k@meetup.com\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"byranncrowdson\"",
+                  "offset": 55
+                }
+              ],
+              "location": "com.bookit.steps.LogInStepDefs.i_enter_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "title should be displayed",
+            "match": {
+              "location": "com.bookit.steps.LogInStepDefs.title_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-26T15:48:29.765Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5265000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bookit.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify that User can not login with invalid credentials.",
+        "description": "",
+        "id": "user-should-be-able-to-login-with-valid-credentials.;verify-that-user-can-not-login-with-invalid-credentials.",
+        "after": [
+          {
+            "result": {
+              "duration": 938000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bookit.steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 400000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter invalid username \"wrong\" and password \"wrong\" and click on sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrong\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"wrong\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.bookit.steps.LogInStepDefs.i_enter_invalid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the system should show the error message as \"[ObjectProgresEvent]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"[ObjectProgresEvent]\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.bookit.steps.LogInStepDefs.the_system_should_show_the_error_message_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "User should be able to login with valid credentials.",
+    "description": "",
+    "id": "user-should-be-able-to-login-with-valid-credentials.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
