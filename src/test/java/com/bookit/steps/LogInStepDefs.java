@@ -2,6 +2,8 @@ package com.bookit.steps;
 
 import com.bookit.pages.BookItHomePage;
 import com.bookit.pages.LoginPage;
+import com.bookit.utility.ConfigurationReader;
+import com.bookit.utility.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,9 +15,7 @@ public class LogInStepDefs {
 
     @Given("I am on the login page")
     public void i_am_on_the_login_page() {
-
-        // We are already handling it in the hooks class.
-
+        Driver.getDriver().get(ConfigurationReader.getProperty("bookit_url"));
 
     }
 
@@ -47,4 +47,6 @@ public class LogInStepDefs {
 
 
     }
+
+
 }
