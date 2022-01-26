@@ -1,0 +1,214 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 19553000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.bookit.steps.LogInStepDefs.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-25T16:17:51.333Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bookit.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify that User can login.",
+        "description": "",
+        "id": "user-should-be-able-to-login-with-valid-credentials.;verify-that-user-can-login.",
+        "after": [
+          {
+            "result": {
+              "duration": 291000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bookit.steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1611000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter username \"bstouther8k@meetup.com\" and password \"byranncrowdson\" and click on sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bstouther8k@meetup.com\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"byranncrowdson\"",
+                  "offset": 55
+                }
+              ],
+              "location": "com.bookit.steps.LogInStepDefs.i_enter_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "title should be displayed",
+            "match": {
+              "location": "com.bookit.steps.LogInStepDefs.title_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 21709000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.bookit.steps.LogInStepDefs.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-25T16:18:13.033Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bookit.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify that User can not login with invalid credentials.",
+        "description": "",
+        "id": "user-should-be-able-to-login-with-valid-credentials.;verify-that-user-can-not-login-with-invalid-credentials.",
+        "after": [
+          {
+            "result": {
+              "duration": 216000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bookit.steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter invalid username \" \" and password \" \" and click on sign in button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\" \"",
+                  "offset": 25
+                },
+                {
+                  "val": "\" \"",
+                  "offset": 42
+                }
+              ],
+              "location": "com.bookit.steps.LogInStepDefs.i_enter_invalid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the system should show the error message as \"[ObjectProgresEvent]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"[ObjectProgresEvent]\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.bookit.steps.LogInStepDefs.the_system_should_show_the_error_message_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          }
+        ]
+      }
+    ],
+    "name": "User should be able to login with valid credentials.",
+    "description": "",
+    "id": "user-should-be-able-to-login-with-valid-credentials.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
