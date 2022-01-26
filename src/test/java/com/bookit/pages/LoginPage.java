@@ -1,11 +1,9 @@
 package com.bookit.pages;
 
-import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends  BasePage{
-
 
     @Override
     public void isCurrentPage() {
@@ -21,7 +19,7 @@ public class LoginPage extends  BasePage{
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement sigInBtn;
 
-    @FindBy (xpath = "//div[@class='cdk-overlay-container']")
+    @FindBy (xpath = "//div[contains(text(),'[object ProgressEvent]')]")
     public WebElement errorMsg;
 
 
@@ -30,8 +28,5 @@ public class LoginPage extends  BasePage{
         passwordField.sendKeys(p);
         sigInBtn.click();
     }
-
-
-
 
 }
