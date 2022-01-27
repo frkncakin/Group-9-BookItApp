@@ -7,7 +7,6 @@ public class LoginPage extends  BasePage{
 
     @Override
     public void isCurrentPage() {
-
     }
 
     @FindBy(xpath = "//input[@name='email']")
