@@ -28,4 +28,5 @@ public class LoginPage extends  BasePage{
         sigInBtn.click();
     }
 
+
 }
